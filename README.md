@@ -122,3 +122,13 @@ ptxas /tmp/tmpxft_0002c748_00000000-8_tsdf_volume.compute_86.ptx, line 3650; err
 ```
 
 Solved this problem by replacing the `__any()` and `__ballot` with `__any_sync()` and `__ballot_sync()` in  tsdf_volume.cu
+
+
+```
+CMake Error at /home/ian/opencv_contrib/modules/sfm/src/libmv_light/libmv/simple_pipeline/CMakeLists.txt:18 (ADD_LIBRARY):
+  Target "simple_pipeline" links to target "CUDA::cusparse" but the target
+  was not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+```
+
+Solved this problem by updating the cmake into the latest version
