@@ -115,7 +115,7 @@ doi = "10.1007/978-3-319-46484-8_22",
 url = "http://dx.doi.org/10.1007/978-3-319-46484-8_22"
 }
 ```
-## Problems when compiling with CUDA 11.3
+## Problems when compiling with CUDA 11.3&Latest CMAKE&Ceres 
 ```
 ptxas /tmp/tmpxft_0002c748_00000000-8_tsdf_volume.compute_86.ptx, line 3636; error : Instruction 'vote' without '.sync' is not supported on .target sm_70 and higher from PTX ISA version 6.4
 ptxas /tmp/tmpxft_0002c748_00000000-8_tsdf_volume.compute_86.ptx, line 3650; error : Instruction 'vote' without '.sync' is not supported on .target
